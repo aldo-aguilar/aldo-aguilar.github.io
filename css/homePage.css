@@ -116,9 +116,11 @@ ul ul a{
     margin-top: 5%;
     padding-right: 0%;
     
+    
 }
 
 .splash-banner{
+    transition: .5s !important;
     border-radius: 40px;
     background-color: rgb(193, 193, 193);
     padding-left: 10%;
@@ -126,12 +128,28 @@ ul ul a{
     padding-bottom: 2%;
     margin-right: 30%;
     margin-left: 0;
+    box-shadow: -10px 20px 8px rgba(32, 32, 32, 0.63);
+}
+
+.splash-banner:hover{
+    border-radius: 40px;
+    background-color: rgb(193, 193, 193);
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 28%;
+    margin-left: 0;
+    box-shadow: -10px 25px 8px rgba(32, 32, 32, 0.63);
 }
 
 .me{
     width: 20%;
     height: 20%;
     border-radius: 25px;
+}
+
+.me:hover{
+    cursor: pointer;
 }
 
 #welcomeSplash{
@@ -142,10 +160,29 @@ ul ul a{
 }
 
 #status{
-    padding-left: 15%;
+    transition: .5s !important;
+    border-radius: 40px;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 5%;
+    background-color: rgb(165, 165, 165);
+    padding-left: 5%;
     padding-right: 5%;
+    box-shadow: -10px 12px 8px rgba(32, 32, 32, 0.63);
+}
+
+#status:hover{
+
+    border-radius: 40px;
+    margin-top: 25px;
+    margin-left: 14%;
+    margin-right: 6%;
+    background-color: rgb(165, 165, 165);
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: -10px 20px 8px rgba(32, 32, 32, 0.63);
 }
 #website-status{
-
+    
     font-size: 36px;
 }
