@@ -1,10 +1,92 @@
 <!doctype html>
-<div class="jumbotron text-center">
-    <h1>Bootstrap Testing</h1>
-    <p> Resizing works </p>
-</div>
+<html lang="en">
 
-<div class="main-container">
-    <div class="row">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aldo Aguilar</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/homePage.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <div class="wrapper">
+        <!-- this is the sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h2 id="sidebar-head">Welcome</h2>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Navigation</p>
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#blogSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Blog</a>
+                    <ul class="collapse list-unstyled" id="blogSubmenu">
+                        <li>Test 1</li>
+                        <li>Test 2</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            
+        </nav>
+
+
+        <!-- container for the button -->
+        <div id="button-container">
+            <nav class="navbar navbar-expand-lg" id="navSquare">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                </div>
+            </nav>
+        </div>
+
+        <!-- intro to the site -->
+        <div class="homePageContent">
+            <div class="picture-container">
+                <div class="splash-banner">
+                    <img src="images/me.jpg" alt="Aldo Aguilar" class="me">
+                    <h1 id="welcomeSplash">Aldo Aguilar</h1>
+                </div>
+            </div>
+            <div id="status">
+                <span id="website-status">
+                    Hi welcome to my website, it is currently a work in progress right now. But check back for blog post related to 
+                    deep learning and interactive tools to help learn concepts in deep learning! 
+                </span>
+            </div>
+        </div>
     </div>
-</div>
+    <!-- js dependncies-->
+    <script src="./js/sidebar.js"></script>
+
+</body>
+
+</html>
