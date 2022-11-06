@@ -1,1 +1,128 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.8b936f8f.js"></script><link href="/static/css/main.87bca214.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<title>aldo aguilar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "courier", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-100">
+    <span class="w3-left w3-padding"><img src="resources/website-icon.png" alt="digital graphic of a cartoon computer" width="30" height="30"></span>
+    <span class="w3-left w3-padding">aldo aguilar</span>
+</header>
+
+
+<!-- content of page -->
+<div class="w3-main" style="margin-left:200px">
+
+  <!-- small screen push content down --> 
+  <div style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-row-padding w3-content">
+    <div class="w3-half" style="width: 50%;">
+        <div class="w3-card-4" style="margin:20px;padding:20px;">
+            <img src="resources/website-icon.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>aldo aguilar</p>
+            </div>
+        </div>
+        <div class="w3-card-4" style="margin:20px;padding:20px;">
+            <img src="resources/website-icon.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>aldo aguilar</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-half" style="width: 50%;">
+        <div class="w3-card-4" style="margin:20px;padding:20px;">
+            <img src="resources/website-icon.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>aldo aguilar</p>
+            </div>
+        </div>
+        <div class="w3-card-4" style="margin:20px;padding:20px;">
+            <img src="resources/website-icon.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>aldo aguilar</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>about me</b></h4>
+    <img src="resources/aldo-aguilar.jpg" alt="picture of aldo aguilar in a gray sweater" class="w3-image w3-padding-32" width="150" height="200">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <p>my name is aldo aguilar, i exist to create things! i like to work on art installations, drawing, fabrication projects, and anything in-between. 
+        i am currently finishing a bachelors of science in computer science from northwestern university. i graduate in december,
+        and i will be working as a researcher for the interactive audio lab, from los angles ca. 
+      </p>
+      <p>mail: example@example.com</p>
+      <p>tel: 5353 35531</p>
+      <hr class="w3-opacity">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
