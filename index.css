@@ -6,10 +6,10 @@
 
 .bio-pic {
     float:left;
-    width: 30%;
-    height: 30%;
+    width: 300;
+    height: 350;
     margin-right: 5%;
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 
 .icon {
