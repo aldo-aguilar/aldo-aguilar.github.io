@@ -1,0 +1,22 @@
+.bio {
+    margin-top:100px;
+    margin-right:5%;
+    margin-left:15%;
+}
+
+.bio-pic {
+    float:left;
+    width: 30%;
+    height: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.icon {
+    width:32px;
+    margin:5px;
+}
+
+.icon:hover {
+    fill: white;
+}
