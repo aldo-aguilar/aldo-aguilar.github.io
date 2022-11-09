@@ -1,7 +1,7 @@
 .bio {
     margin-top:100px;
     margin-right:5%;
-    margin-left:15%;
+    margin-left: 2.5%;
 }
 
 .bio-pic {
@@ -19,4 +19,9 @@
 
 .icon:hover {
     fill: white;
+}
+
+.footer {
+    margin-left:5%;
+    margin-right:2.5%;
 }
