@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
 
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "courier", sans-serif}
@@ -30,7 +31,7 @@ body,h1,h2,h3,h4,h5 {font-family: "courier", sans-serif}
 <!-- about/bio -->
 <div class="w3-container w3-dark-grey w3-center w3-text-light-grey bio" id="about">
   <h4><b>about me</b></h4>
-  <img src="resources/aldo-in-computer.png" alt="picture of aldo aguilar in a gray sweater" class="w3-image w3-padding-32 bio-pic" width="300" height="350">
+  <img src="resources/aldo-in-computer.png" alt="picture of aldo aguilar in a gray sweater" class="w3-image w3-padding-32 bio-pic" width="300" height="350" onmouseover="hover(this);" onmouseout="unhover(this);">
   <div class="w3-content w3-justify" style="max-width:600px">
     <p>my name is aldo aguilar, i exist to create things! i like to work on art installations, drawing, sound art, and anything involving building and being creative. 
       i am currently finishing a bachelors of science in computer science from northwestern university. i graduate in december,
@@ -43,47 +44,51 @@ body,h1,h2,h3,h4,h5 {font-family: "courier", sans-serif}
   </div>
 </div>
 <!-- content of page -->
-<div class="w3-main" style="margin-left:200px">
-
-  
+<div class="w3-main main">
   <!-- project grid -->
-  <div><h1>projects</h1></div>
-  
-  <div class="w3-row w3-content">
-    <div class="w3-half" style="width: 50%;">
-      <!-- thunbnails will be 1024x1024-->
-      <div class="w3-card-4" style="margin:20px;padding:20px;">
-          <img src="resources/sisyphus2-0-graphic.png" alt="digital graphic of a cartoon computer" style="width:100%;">
-          <div class="w3-container w3-center" style="font-size: 150%;font-weight:bold;padding:5px;text-size-adjust:60%;">
-              <p>sisyphus 2.0</p>
-          </div>
-      </div>
-      <a href="https://interactiveaudiolab.github.io/project/music-trees.html"style="text-decoration:none;">
-      <div class="w3-card-4" style="margin:20px;padding:20px;">
-          <img src="resources/h-trees-thumbnail.png" alt="digital graphic of a cartoon computer" style="width:100%;">
-          <div class="w3-container w3-center" style="font-size: 150%;font-weight:bold;padding:5px;text-size-adjust:60%;">
-              <p>h-trees</p>
-          </div>
-      </div>
-      </a>
-  </div>
-  <div class="w3-half" style="width:50%;">
-      <div class="w3-card-4" style="margin:20px;padding:20px;">
-          <img src="resources/crowdpleaser-thumbnail.png" alt="digital graphic of a cartoon computer" style="width:100%;">
-          <div class="w3-container w3-center" style="font-size: 150%;font-weight:bold;padding:5px;text-size-adjust:60%;">
-              <p>the crowd pleaser</p>
-          </div>
-      </div>
-      <a href="https://interactiveaudiolab.github.io/project/audacity.html" style="text-decoration:none;">
-      <div class="w3-card-4" style="margin:20px;padding:20px;">
-          <img src="resources/audacity-thumbnail.png" alt="digital graphic of a cartoon computer" style="width:100%;">
-          <div class="w3-container w3-center" style="font-size:150%;font-weight:bold;padding:5px;text-size-adjust:60%;">
-              <p>d.l.t for audacity</p>
-          </div>
-      </div>
-    </a>
-  </div>
+  <div class="projects">
+    <h1>projects</h1>
+    <div class="w3-row w3-content">
+      <div class="w3-half">
+        <!-- thunbnails will be 1024x1024-->
+        
+        <div class="w3-card-4 project-card">
+            <img src="resources/sisyphus2-0-graphic.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>sisyphus 2.0</p>
+            </div>
+        </div>
+
+        <a href="https://interactiveaudiolab.github.io/project/music-trees.html"style="text-decoration:none;">
+        <div class="w3-card-4 project-card">
+            <img src="resources/h-trees-thumbnail.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>h-trees</p>
+            </div>
+        </div>
+        </a>
+
+    </div>
     
+    <div class="w3-half">
+        <div class="w3-card-4 project-card">
+            <img src="resources/crowdpleaser-thumbnail.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>the crowd pleaser</p>
+            </div>
+        </div>
+        <a href="https://interactiveaudiolab.github.io/project/audacity.html" style="text-decoration:none;">
+
+        <div class="w3-card-4 project-card">
+            <img src="resources/audacity-thumbnail.png" alt="digital graphic of a cartoon computer" style="width:100%;">
+            <div class="w3-container w3-center">
+                <p>d.l.t for audacity</p>
+            </div>
+        </div>
+      </a>
+    </div>
+      
+    </div>
   </div>
   
 

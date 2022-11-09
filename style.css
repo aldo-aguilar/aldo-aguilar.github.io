@@ -1,0 +1,51 @@
+.bio {
+    margin-top:100px;
+    margin-right:5%;
+    margin-left: 2.5%;
+}
+
+.bio-pic {
+    float:left;
+    width: 300;
+    height: 350;
+    margin-right: 5%;
+    margin-left: 2.5%;
+    background-image: url("resources/aldo-in-computer.png") no-repeat;
+}
+
+.bio-pic:hover {
+    background-image: url("resources/aldo-in-computer-crossed-eyes.png") no-repeat;
+}
+
+.main {
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.projects{
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.project-card {
+    margin:20px;
+    padding:20px;
+    font-size: 150%;
+    font-weight:bold;
+    padding:5px;
+    text-size-adjust:60%;
+}
+
+.icon {
+    width:32px;
+    margin:5px;
+}
+
+.icon:hover {
+    fill: white;
+}
+
+.footer {
+    margin-left:5%;
+    margin-right:2.5%;
+}
