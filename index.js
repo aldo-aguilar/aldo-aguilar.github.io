@@ -1,7 +1,7 @@
-function hover(element) {
+function hover_bio_pic(element) {
     element.setAttribute('src', 'resources/aldo-in-computer-crossed-eyes.png');
   }
   
-  function unhover(element) {
+  function unhover_bio_pic(element) {
     element.setAttribute('src', 'resources/aldo-in-computer.png');
   }
