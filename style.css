@@ -1,51 +1,294 @@
-.bio {
-    margin-top:100px;
-    margin-right:5%;
-    margin-left: 2.5%;
+style.css {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.bio-pic {
-    float:left;
-    width: 300;
-    height: 350;
-    margin-right: 5%;
-    margin-left: 2.5%;
-    background-image: url("resources/aldo-in-computer.png") no-repeat;
+header {
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.bio-pic:hover {
-    background-image: url("resources/aldo-in-computer-crossed-eyes.png") no-repeat;
+header a:link {
+  color:rgb(66, 39, 87)
+}
+header a:hover {
+  color:rgb(136, 113, 167)
+}
+header a:visited {
+  color:rgb(0, 0, 0)
+}
+header a:active {
+  color:rgb(255, 234, 0)
 }
 
-.main {
-    margin-left:5%;
-    margin-right: 5%;
+header.dark a:link {
+  color:rgb(66, 39, 87)
+}
+header.dark a:hover {
+  color:rgb(136, 113, 167)
+}
+header.dark a:visited {
+  color:rgb(255, 255, 255)
+}
+header.dark a:active {
+  color:rgb(255, 234, 0)
 }
 
-.projects{
-    margin-left:5%;
-    margin-right: 5%;
+.topbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.project-card {
-    margin:20px;
-    padding:20px;
-    font-size: 150%;
-    font-weight:bold;
-    padding:5px;
-    text-size-adjust:60%;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:  20px;
+}
+
+.black-container {
+  background-color: #000;
+  }
+
+.topbar-left {
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-    width:32px;
-    margin:5px;
+  width: 50px;
+
 }
 
-.icon:hover {
-    fill: white;
+h1 {
+  margin-left: 20px;
+  font-size: 32px;
 }
 
-.footer {
-    margin-left:5%;
-    margin-right:2.5%;
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+
+main {
+  background-color: #fff;
+  padding: 80px 0;
+  flex: 1;
+  position: relative;
+  top: 64px; /* Adjust top position to make room for fixed header */
+}
+
+footer {
+  background-color: #eee;
+  padding: 60px 0px 10px 0px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  display: flex;  /* Makes the footer a flex container */
+  height: 30px;  /* Defines the height of the footer */
+  width: 100%;  /* Defines the width of the footer */
+  align-items: center;  /* Aligns the elements vertically (along the cross axis) */
+  justify-content: center;  /* Aligns the elements horizontally (along the main axis) */
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-icon {
+  width:32px;
+  margin:5px;
+  display: flex;  /* Makes the elements flex items */
+  align-items: center;  /* Aligns the elements vertically (along the cross axis) */
+  justify-content: center;  /* Aligns the elements horizontally (along the main axis) */
+
+}
+
+#footer-note {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 30px;
+}
+
+.canvas-container {
+  display: flex; /* Set the display property to flex /
+  justify-content: center; / Center the element horizontally */
+  }
+
+canvas {
+width: 800px;
+height: 600px;
+}
+
+#canvas-container {
+text-align: center;
+}
+
+#project-title {
+margin-bottom: 10px;
+}
+
+#sketch-holder {
+width: 80%;
+height: 60%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.center {
+display: flex;
+justify-content: center;
+}
+
+/* Dark theme */
+
+body.dark {
+background-color: #222;
+color: #fff;
+}
+
+header.dark {
+background-color: #333;
+}
+
+footer.dark {
+background-color: #333;
+}
+
+main.dark {
+  background-color: rgb(70, 70, 70);
+}
+
+.topbar.dark {
+  color: #fff;
+}
+
+#sliders {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+
+#slider-bar {
+display: flex;
+align-items: center;
+background-color: #ebebeb;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.272);
+padding: 10px;
+max-width: 800;
+border-radius: 10px;
+color: rgb(0, 0, 0);
+}
+
+#slider-bar.dark{
+  display: flex;
+  align-items: center;
+  background-color: #393939;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.155);
+  padding: 10px;
+  max-width: 800;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+#slider-bar label {
+  margin-right: 10px;
+}
+
+.slider {
+  width: 100px;
+}
+
+.bio-pic {
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  max-height: none;
+  margin: 30px auto 10px auto;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px 20px 20px;
+  background-color:rgb(38, 38, 38);
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#theme-button-con {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-bar {
+  width: 100%;
+}
+
+
+.header-bar ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#p5-info {
+  text-align: center;
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(167, 167, 167);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(203, 161, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 183, 255);
+  background-color: transparent;
+  text-decoration: underline;
 }
