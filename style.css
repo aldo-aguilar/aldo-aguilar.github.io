@@ -12,14 +12,15 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  border: red 1px;
 }
 
 header {
-  /* background-color: rgb(231, 231, 231); */
   position: static;
   top: 0;
   width: 100%;
   /* z-index: 1; */
+  border: purple 10px;
 }
 
 header a:link {
@@ -95,16 +96,15 @@ nav li {
 
 
 main {
-  background-color: #fff;
-  padding: 80px 0;
+  padding: 20px 0;
   flex: 1;
-  position: relative;
+  /* position: relative; */
   top: 64px; /* Adjust top position to make room for fixed header */
 }
 
 footer {
   /* background-color: #eee; */
-  padding: 60px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
   margin-top: 10px;
   text-align: center;
   width: 100%;
