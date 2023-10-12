@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>projects | aldo aguilar</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="projects.css">
@@ -18,11 +19,6 @@
           <li><a href="index.html">home</a></li>
           <li><a href="p5.html">digital art</a></li>
         </ul>
-        <div id="theme-button-con" class="header-bar">
-          <button id="theme-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          </button>
-        </div>
         <script src="index.js"></script>
       </nav>
     </div>
@@ -30,50 +26,79 @@
   <main>
     <div class="container">
       <h2>projects</h2>
-
-      <a href="https://interactiveaudiolab.github.io/project/audacity.html">
-        <div class="project">
-          <img src="resources/audacity-thumbnail.png" alt="3 by 3 gird of 9 paris of audio signals within headphones" id="project-tile-img">
+      <div class="project-row">
+        <a href="https://interactiveaudiolab.github.io/project/audacity.html">
+          <div class="project-image">
+            <img src="resources/audacity-thumbnail.png" alt="3 by 3 gird of 9 paris of audio signals within headphones" id="project-tile-img">
+          </div>
+        </a>
+        <div class="project-description">
           <h3>deep learning tools for audacity</h3>
           <p></p>
         </div>
-      </a>
+      </div>
 
-      <a href="https://interactiveaudiolab.github.io/project/music-trees.html">
-        <div class="project">
-          <img src="resources/h-trees-thumbnail.png" alt="circles connected to each other in a graph" id="project-tile-img"> 
+      <div class="project-row">
+        <a href="https://interactiveaudiolab.github.io/project/music-trees.html">
+          <div class="project-image">
+            <img src="resources/h-trees-thumbnail.png" alt="circles connected to each other in a graph" id="project-tile-img"> 
+          </div>
+        </a>
+        <div class="project-description">
           <h3>few-shot musical instrument recognition</h3>
           <p></p>
         </div>
-      </a>
-
-      <a href="p5.html">
-        <div class="project">
-          <img src="resources/digital-art-thumbnail.png" alt="rhombs made of light blue circles with light gray shadows" id="project-tile-img">
+      </div>
+      
+      <div class="project-row">
+          <a href="p5.html">
+            <div class="project-image">
+              <img src="resources/digital-art-thumbnail.png" alt="rhombs made of light blue circles with light gray shadows" id="project-tile-img">
+            </div>
+          </a>
+        <div class="project-description">
           <h3>digital art</h3>
           <p></p>
         </div>
-      </a>
+    </div> 
 
-      <h2>soon to be added</h2>
-      
-      <div class="project">
+    <div class="project-row">
+      <div class="project-image placeholder"></div>
+      <div class="project-description"> 
+        <h3>to be posted</h3> 
+      </div>
+    </div>
+    
+    <div class="project-row">
+      <div class="project-image">
         <img src="resources/crowdpleaser-thumbnail.png" alt="image of various posters for the crowdpleaser collaged" id="project-tile-img">
+      </div>
+      <div class="project-description">
         <h3>the crowdpleaser</h3>
         <p></p>
       </div>
+    </div>
 
-      <div class="project">
-        <img src="resources/sisyphus2-0-graphic.png" alt="an infinity symbol with a sphere made of lines placed on the top right side" id="project-tile-img">
+    <div class="project-row">
+        <div class="project-image">
+          <img src="resources/sisyphus2-0-graphic.png" alt="an infinity symbol with a sphere made of lines placed on the top right side" id="project-tile-img">
+        </div>
+      <div class="project-description">
         <h3>sisyphus 2.0</h3>
         <p></p>
       </div>
-      
-        <div class="project">
+    </div>
+    <div class="project-row">
+        <div class="project-image">
           <img src="resources/drawings-thumbnail.png" alt="small collage of sketches" id="project-tile-img">
+        </div>
+        <div class="project-description">
           <h3>drawings</h3>
           <p></p>
         </div>
+    </div>
+
+  </div>
 
 
     </div>
@@ -91,3 +116,36 @@
   </footer>
 </body>
 </html>
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>projects | aldo aguilar</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="projects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    Header content here 
+  </header>
+  <main>
+    <div class="container">
+      <h2>projects</h2>
+      <div class="project-row">
+        <div class="project-image">
+          <img src="resources/audacity-thumbnail.png" alt="3 by 3 grid of 9 pairs of audio signals within headphones">
+        </div>
+        <div class="project-description">
+          <h3>deep learning tools for audacity</h3>
+          <p>Description here...</p>
+        </div>
+      </div>
+    Add more project rows here
+    </div>
+  </main>
+  <footer>
+    Footer content here
+  </footer>
+</body>
+</html> -->

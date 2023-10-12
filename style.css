@@ -15,11 +15,11 @@ body {
 }
 
 header {
-  background-color: rgb(231, 231, 231);
-  position: fixed;
+  /* background-color: rgb(231, 231, 231); */
+  position: static;
   top: 0;
   width: 100%;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 header a:link {
@@ -103,7 +103,7 @@ main {
 }
 
 footer {
-  background-color: #eee;
+  /* background-color: #eee; */
   padding: 60px 0px 10px 0px;
   margin-top: 10px;
   text-align: center;
@@ -152,6 +152,22 @@ text-align: center;
 #project-title {
 margin-bottom: 10px;
 }
+
+.project {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* if you want the projects to wrap to the next line */
+}
+
+
 
 #sketch-holder {
 width: 80%;
@@ -242,18 +258,13 @@ color: rgb(0, 0, 0);
   max-width: 1200px;
   max-height: none;
   margin: 30px auto 10px auto;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 10px 20px 20px 20px;
-  background-color:rgb(38, 38, 38);
+  /* background-color:rgb(193, 193, 193); */
   overflow: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-#theme-button-con {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
 .header-bar {
   width: 100%;
@@ -270,13 +281,13 @@ color: rgb(0, 0, 0);
 }
 
 a:link {
-  color: rgb(0, 0, 0);
+  color: rgb(54, 103, 164);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(167, 167, 167);
+  color: rgb(101, 5, 255)
   background-color: transparent;
   text-decoration: none;
 }

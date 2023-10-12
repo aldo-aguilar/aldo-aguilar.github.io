@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>projects | My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="projects.css">
@@ -18,11 +19,6 @@
           <li><a href="index.html">home</a></li>
           <li><a href="projects.html">projects</a></li>
         </ul>
-        <div id="theme-button-con" class="header-bar">
-          <button id="theme-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          </button>
-        </div>
         <script src="index.js"></script>
       </nav>
     </div>
@@ -31,28 +27,40 @@
   <main>
     <div class="container">
       <h2>p5</h2>
-
+      
+      <div class="project-row">
         <a href="circle-gen.html">
-        <div class="project">
-            <img src="resources/circles-thumbnail.png" alt="collection of randomly placed colored circles">
-            <h3>circle paint</h3>
-            <p>change the color with the mouse wheel, and size with the up/down arrow key</p>
+          <div class="project-image">
+              <img src="resources/circles-thumbnail.png" alt="collection of randomly placed colored circles">
+          </div>
+        </a>
+        <div class="project-description">
+          <h3>circle paint</h3>
+          <p>change the color with the mouse wheel, and size with the up/down arrow key</p>
         </div>
-      </a>
-      <a href="waves.html">
-        <div class="project">
-          <img src="resources/waves-thumbnail.png" alt="project 2">
+      </div>
+      <div class="project-row">
+        <a href="waves.html">
+          <div class="project-image">
+            <img src="resources/waves-thumbnail.png" alt="project 2">
+          </div>
+        </a>
+        <div class="project-description">
           <h3>waves</h3>
           <p>wave generated with user controlled frequency, amplitude, and alpha/color slider. play with different high frequency alias patterns!</p>
         </div>
-      </a>
-      <a href="worm.html">
-        <div class="project">
-          <img src="resources/worm-thumbnail.png" alt="project 3">
+      </div>
+      <div class="project-row">
+        <a href="worm.html">
+          <div class="project-image">
+            <img src="resources/worm-thumbnail.png" alt="project 3">
+          </div>
+        </a>
+        <div class="project-description">
           <h3>wiggle worm</h3>
           <p>screensaver like bouncing worm that never stops creating patterns, left click to clear the screen.</p>
         </div>
-      </a>
+      </div>
       <!-- <a href="sierpinski.html">
         <div class="project">
           <img src="resources/worm-thumbnail.png" alt="project 3">
