@@ -1,3 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Tauri', monospace;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #d0d1d2;
+}
+
+:root {
+  /* components */
+  --header-spacing: 10px;
+  --navbar-spacing: 10px;
+  --footer-spacing: 20px;
+
+  /* pages */
+  --page-top-spacing: 40px;
+  --page-r-spacing: max(50px, 20vw);
+  --page-l-spacing: 5vw;
+}
+
 .App {
   text-align: center;
 }
