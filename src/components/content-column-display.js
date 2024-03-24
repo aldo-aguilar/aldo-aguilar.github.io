@@ -5,9 +5,9 @@ const Entry = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 80%;
   max-width: 800px;
-  gap: 20px;
+  gap: 10%;
+  margin-bottom: 5%;
 `
 
 const EntryImage = styled.img`
@@ -18,7 +18,6 @@ const EntryImage = styled.img`
 const EntryDescription = styled.div`
   flex-grow: 1;
   padding: 10px;
-  height: 150px;
 `
 
 const ContentColumnDisplay = ({entries}) => (

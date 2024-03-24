@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import ContentColumnDisplay from '../components/content-display';
+import ContentColumnDisplay from '../components/content-column-display';
 
 import crowdpleaserThumbnail from './assets/images/crowdpleaser-thumbnail.png'
 import digitalArt from './assets/images/digital-art-thumbnail.png'
