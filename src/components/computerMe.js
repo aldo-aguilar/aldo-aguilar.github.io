@@ -13,7 +13,7 @@ const ImageContainer = styled.img`
   cursor: pointer;
 `;
 
-const images = [blankcomputer, aldocomputer]; // Add as many images as you have
+const images = [aldocomputer, blankcomputer,]; // Add as many images as you have
 
 function ComputerMe() {
   const [currentIndex, setCurrentIndex] = useState(0);

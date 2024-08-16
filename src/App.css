@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #d0d1d2;
+  background-color: #ededed;
 }
 
 :root {
@@ -20,7 +20,7 @@ html, body {
 
   /* pages */
   --page-top-spacing: 40px;
-  --page-r-spacing: max(50px, 20vw);
+  --page-r-spacing: max(30px, 5vw);
   --page-l-spacing: 5vw;
 }
 

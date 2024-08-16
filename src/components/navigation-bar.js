@@ -9,7 +9,7 @@ function Navbar() {
   const links = [
     { to: '/', text: 'home' },
     { to: '/art', text: 'art' },
-    { to: '/contact', text: 'contact me' },
+    // { to: '/contact', text: 'contact me' },
     { to: '/projects', text: 'projects' },
   ];
 

@@ -12,6 +12,7 @@ const AboutHeading = styled.h2`
 
 `
 const AboutBody = styled.div`
+margin-top: 5%;
 `
 const AboutDescription = styled.div`
 `
